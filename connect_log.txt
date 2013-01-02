@@ -1,1 +1,0 @@
-Success - connected to Database(MongoClient('myDatabase.mongolab.com', 12345), u'10000venues')
