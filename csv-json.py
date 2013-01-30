@@ -1,4 +1,4 @@
-#convert .csv files to json format
+#convert .csv files (metro-stats.csv) from census.gov to json format
 
 import csv
 import json
