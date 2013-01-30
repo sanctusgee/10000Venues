@@ -6,6 +6,8 @@ Pull data about Places from the Factual API
 Example pulling data from Factual API (restaurant table) - list of restaurant from 50 US cities.
 
 * This is a work in progress. Other than retrieving the data, the grand vision is figuring out how to make it useful.
+* Needless to say, this code is FREE (as in Free Beer), just be sure to give proper attribution to me
+* When pulling data from Factual.com, read and abide by the Terms of Services on their site
 
 
 Data Sources:
