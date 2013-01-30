@@ -14,7 +14,7 @@ def set_credentials():
    cred = Factual(KEY, SECRET)
 
    return cred
-
+#of course, RegEx works here as well...
 def find_replace(line_item):
     ''' check repl{old_value : new_value} and 
          replace old_value in string with new_value   '''
