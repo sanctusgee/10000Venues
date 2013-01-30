@@ -1,27 +1,16 @@
 import io
 import os
-#import time
 import codecs
 import fileinput
-import pymongo
-#import fnmatch
-from pymongo import MongoClient
-from factual import *
 
 FILE_NAME= "VenueList.txt"
 DEST_FILE = "Updated-VenueList.json"
 
-def db_connect():    
-    connection = MongoClient()
-    conection = MongoClient('ds045897.mongolab.com', 45897)
-    db = connection['10000venues']
-    connection.close()
-
 def set_credentials():
    '''initialize the appp OAuth key and secret '''
    
-   KEY = "lyp2Ugn85C6AwvOdH21vtWydWrjFn4jo2bb2ZzX2"
-   SECRET = "UMdhYoQPyhXiCpjTru18N4X5Diyy1LnSJe9x6HQR"
+   KEY = "<YOUR FACTUAL API KEY"
+   SECRET = "<YOUR FACTUAL API SECRET>"
    cred = Factual(KEY, SECRET)
 
    return cred
@@ -109,15 +98,15 @@ def run_search():
    
    #table = factual.table('places')
    restaurants = factual.table("restaurants-us")      
-   #city_list = ["New York", "Los Angeles", "Chicago", "Houston", "Philadelphia"
-   #                  ,"Phoenix", "San Anotnio", "San Diego", "Dallas", "San Jose"
-   #                  ,"Jacksonville", "Indianapolis", "Austin", "San Francisco"
-   #                  ,"Columbus", "Fort Worth", "Charlotte", "Detroit", "El Paso"
-   #                  ,"Memphis", "Boston", "Seattle", "Denver", "Baltimore"
-   #             ]
+   city_list = ["New York", "Los Angeles", "Chicago", "Houston", "Philadelphia"
+                     ,"Phoenix", "San Anotnio", "San Diego", "Dallas", "San Jose"
+                     ,"Jacksonville", "Indianapolis", "Austin", "San Francisco"
+                     ,"Columbus", "Fort Worth", "Charlotte", "Detroit", "El Paso"
+                     ,"Memphis", "Boston", "Seattle", "Denver", "Baltimore"
+                     #.... other cities
+                ]
    
-   city_list = ["Chicago", "Boston", "Seattle", "Denver", "Baltimore"]
-   venues = {}
+    venues = {}
    
    for cities in city_list:
       #restaurant in given city, with star rating of 4 or greater,
