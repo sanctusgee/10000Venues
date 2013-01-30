@@ -9,7 +9,7 @@ DEST_FILE = "Updated-VenueList.json"
 def set_credentials():
    '''initialize the appp OAuth key and secret '''
    
-   KEY = "<YOUR FACTUAL API KEY"
+   KEY = "<YOUR FACTUAL API KEY>"
    SECRET = "<YOUR FACTUAL API SECRET>"
    cred = Factual(KEY, SECRET)
 
