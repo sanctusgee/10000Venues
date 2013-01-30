@@ -1,7 +1,7 @@
 #coding: utf-8
 # ----------------------------------------------------------------------------
 # CityVenues
-# Copyright (c) 2012 Godwin Effiong
+# Copyright (c) 2013 Godwin Effiong
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
